@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GGI Hub | AI Discovery Dashboard</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <style>
+            body { background-color: #0B0E14; color: #E5E7EB; font-family: 'Inter', sans-serif; }
+            .cyber-lime { color: #CCFF00; }
+            .bg-cyber-lime { background-color: #CCFF00; }
+            .border-cyber-lime { border-color: #CCFF00; }
+            .card-bg { background-color: #151921; }
+            .mono { font-family: 'JetBrains Mono', monospace; }
+        </style>
+    </head>
+    <body class="min-h-screen p-6 md:p-12">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center mb-16">
+            <div class="text-3xl font-black italic tracking-tighter">GGI <span class="cyber-lime">HUB</span></div>
+            <div class="hidden md:block text-xs tracking-[0.3em] text-gray-500 uppercase font-bold">Ministry Funding Initiative // v1.0</div>
+        </nav>
+    
+        <header class="max-w-7xl mx-auto mb-16">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter">AI <span class="cyber-lime">DISCOVERY.</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl border-l-2 border-cyber-lime pl-6">The definitive directory of industry-standard AI tools for automation, media, and business growth. Grounded in expert intelligence.</p>
+        </header>
+    
+        <main class="max-w-7xl mx-auto">
+            <!-- Search -->
+            <div class="relative mb-12">
+                <input type="text" id="toolSearch" placeholder="SEARCH TOOLS (e.g. n8n, Claude, HeyGen)..." 
+                    class="w-full bg-card-bg border border-gray-800 p-6 rounded-xl focus:outline-none focus:border-cyber-lime transition-all text-xl mono">
+            </div>
+    
+            <!-- Category: Automation -->
+            <section class="mb-12">
+                <h2 class="text-xs font-bold tracking-[0.4em] uppercase text-gray-500 mb-8 flex items-center">
+                    <span class="bg-cyber-lime w-2 h-2 mr-3"></span> Workflow Automation
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- n8n Card -->
+                    <div class="card-bg p-8 rounded-2xl border border-gray-800 hover:border-cyber-lime transition-all group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-[10px] font-bold bg-gray-800 px-2 py-1 rounded text-gray-400">TEMPLATE READY</span>
+                            <span class="cyber-lime text-xs font-bold mono">n8n 2.0</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:cyber-lime transition-colors">Autonomous Agent Engine</h3>
+                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Build 24/7 AI agents that replace $10k marketing agencies by automating research, leads, and outreach.</p>
+                        <a href="https://n8n.io" class="inline-block w-full text-center py-4 bg-cyber-lime text-black font-black uppercase tracking-widest text-sm rounded-lg hover:opacity-90 transition-all">Visit Platform</a>
+                    </div>
+                    <!-- Replit Agent -->
+                    <div class="card-bg p-8 rounded-2xl border border-gray-800 hover:border-cyber-lime transition-all group">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-[10px] font-bold bg-gray-800 px-2 py-1 rounded text-gray-400">NEW RELEASE</span>
+                            <span class="cyber-lime text-xs font-bold mono">Replit Agent</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 group-hover:cyber-lime transition-colors">AI Software Engineer</h3>
+                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Deploy AI agents capable of coding and managing complex software environments directly in your browser.</p>
+                        <a href="https://replit.com" class="inline-block w-full text-center py-4 border border-gray-700 text-white font-black uppercase tracking-widest text-sm rounded-lg hover:bg-gray-800 transition-all">Launch Tool</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer class="max-w-7xl mx-auto mt-24 pt-12 border-t border-gray-900 text-center">
+            <p class="text-gray-600 text-xs tracking-widest uppercase">GGI Hub &copy; 2026 // Supporting the Ministry through Intelligence</p>
+        </footer>
+    </body>
+    </html>
